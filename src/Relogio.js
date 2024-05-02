@@ -4,14 +4,14 @@ function Relogio() {
   const [hora, setHora] = useState('');
 
   useEffect(() => {
-    const atualizarHora = () => {
+    const atualizar = () => {
       let relogio = new Date();
       relogio.setTime(relogio.getTime() - 3 * 60 * 60 * 1000);
       let horaAtual = relogio.toISOString().substring(11, 19);
       setHora(horaAtual);
     };
 
-    const intervalID = setInterval(atualizarHora, 1000);
+    const intervalID = setInterval(atualizar, 1000);
 
     return () => clearInterval(intervalID);
   }, []);
@@ -20,7 +20,6 @@ function Relogio() {
     <div>
       <h4>Hora atual:</h4>
       <p>{hora}</p>
-      <h5>Maria Clara Brum</h5>
     </div>
     
   );
