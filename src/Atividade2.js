@@ -1,18 +1,16 @@
 import React from 'react';
-import Letreiro from './Letreiro';
-import Relogio from './Relogio';
 import {Link}  from "react-router-dom";
+import Contador from './Contador';
 
-
-export default function Atividade1() {
+export default function Atividade2() {
     return(
         <>
-            <h1>Atividade 1</h1>
-            <Letreiro />
-            <Relogio />
+            <h1>Atividade 2- Contador</h1>
+            <Contador />
             <br />
             <Link to="/">Retornar a página principal</Link>
         </>
         
     );
 }
+
