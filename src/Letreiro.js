@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 const AnimatedText = () => {
   const [text, setText] = React.useState('');
-  const originalText = '  Conheça a Fatec!';
+  const originalText = 'Coonheça a Fatec!';
   const delay = 200;
 
   React.useEffect(() => {
@@ -26,7 +26,6 @@ const AnimatedText = () => {
 const App = () => {
   return (
     <div>
-      <h2>Atividade REACT - Semana 1</h2>
       <AnimatedText />
     </div>
   );
